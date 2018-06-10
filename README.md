@@ -1,9 +1,13 @@
-<img src="https://travis-ci.com/mrebb/06-tcp-server.svg?branch=master">
+![cf](https://i.imgur.com/7v5ASc8.png) Lab 07: Vanilla HTTP Server
+======
+<img src="https://travis-ci.com/mrebb/07-http-server.svg?branch=master">
 
-## Chat module
+TRAVIS:
+HEROKU:
 
-* @all - Sends message to everyone on the chatroom with a message typed in. 
-* @dm nickname message  - Handles direct messages
-* @quit - closes current connection and deletes user from clientPool
-* @list - lists all current active users.
-* @nickname `<new-name>` - changes the current user nick name to `<new-name>`
+## Vanilla HTTP Server 
+
+* Handles GET and POST methods by building object into cowsay module
+* GET handles '/' and 'cowsay/text='''
+* POST handles '/api/cowsay' . Takes object as input and returns cowsay version of object 
+* Errors are handled when there is a bad request
